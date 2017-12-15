@@ -25,7 +25,9 @@ shinyServer(function(input, output) {
     
     d1 <- data1[data1$Month2==input$month,]
     plot(d1$Temp, d1$Ozone, xlab = "Temperature (F)", 
-         ylab = "Ozone Level (ppb)", pch=20, col="blue", font.lab=2, cex.lab=1.5, xlim=c(50,100), ylim=c(0,175))
+         ylab = "Ozone Level (ppb)", pch=20, col="blue", 
+         font.lab=2, cex.lab=1.5, xlim=c(50,100), ylim=c(0,175),
+         main=input$month, cex.main=1.5)
   
     
   })

@@ -1,0 +1,39 @@
+Exploring the Effect of Temperature on Ozone Levels
+========================================================
+author: Sean Dinn 
+date: 12/14/17
+autosize: true
+transition: rotate
+
+Introduction
+========================================================
+
+This is a description of the Shinyapp that was created to explore the effect of temperature on ozone levels in the atmosphere. The data in this app is from the airquality dataset that is part of the basic R software. The data contains air quality measurements taken in New York from 5/1/73 to 9/30/73. The data was obtained from the New York State Department of Conservation and the National Weather Service.
+
+Dataset Format
+========================================================
+
+```{r, echo=F}
+
+head(airquality,12)
+```
+
+Shiny Application Summary
+========================================================
+
+- The app can be found [here] (https://gunga1214.shinyapps.io/ddp-project/)
+- The user selects the month they would like to view (from May to September)
+- The data for the ozone levels (ppb) vs temperature (F) for that month will be displayed
+- The app lets you easily toggle between months to compare results
+- Go to my Github [repository]  (https://github.com/SeanDinn/DevelopingDataProducts_Project) to see the full code
+
+Example Data
+========================================================
+```{r, echo=FALSE}
+      par(mfrow=c(1,2), xlim=c(50,100))
+      plot(airquality$Temp[airquality$Month==5], airquality$Ozone[airquality$Month==5], xlim=c(50,100),
+           ylim=c(0,120), ylab="Ozone Level (ppb)", xlab="Temperature (degrees F)", main="May")
+      plot(airquality$Temp[airquality$Month==6], airquality$Ozone[airquality$Month==6], xlim=c(50,100),
+           ylim=c(0,120), ylab="Ozone Level (ppb)", xlab="Temperature (degrees F)", main="June")
+      
+```

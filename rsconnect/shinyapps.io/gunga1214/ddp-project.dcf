@@ -1,0 +1,13 @@
+name: ddp-project
+title: DDP-Project
+username:
+account: gunga1214
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 248959
+bundleId: 1135896
+url: https://gunga1214.shinyapps.io/ddp-project/
+when: 1513297157.28565
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: DDP_Presentation-rpubs.html|DDP_Presentation.md|DDP_Presentation.Rpres|file26ac57913988.aux|file26ac57913988.dvi|file26ac57913988.log
